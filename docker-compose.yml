@@ -1,0 +1,8 @@
+#Docker-compose file for TESTING
+version: "3.7"
+
+services:
+    result:
+        build: .
+        ports:
+            - "8080:8080"

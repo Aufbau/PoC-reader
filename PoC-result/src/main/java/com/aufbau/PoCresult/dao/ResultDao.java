@@ -1,6 +1,8 @@
 package com.aufbau.PoCresult.dao;
 
-import java.util.Hashtable;
+import com.aufbau.PoCresult.models.Result;
+
+import java.util.List;
 
 /*
     Interface for a data access object. Has only one method as
@@ -10,6 +12,6 @@ import java.util.Hashtable;
 
 public interface ResultDao {
 
-    Hashtable<String, Integer> getResult();
+    List<Result> getResult();
 
 }

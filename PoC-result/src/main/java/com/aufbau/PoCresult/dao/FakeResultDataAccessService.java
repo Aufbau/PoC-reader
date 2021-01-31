@@ -1,26 +1,29 @@
 package com.aufbau.PoCresult.dao;
 
+import com.aufbau.PoCresult.models.Result;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.List;
 
 /*
    Fake DAO for testing.
-   Uses a Hashtable which will always return the same value (for now).
+   Uses a List of Result which will always return the same value (for now).
  */
 
 @Repository("fakeResults")
 public class FakeResultDataAccessService implements ResultDao{
 
-    private static Hashtable<String, Integer> fakeResult = new Hashtable<>();
+    private static List<Result> fakeResults = new ArrayList<>();
 
     public FakeResultDataAccessService() {
-        this.fakeResult.put("Mango", 5);
-        this.fakeResult.put("Apple", 3);
+        fakeResults.add(new Result("Apple", 3));
+        fakeResults.add(new Result("Mango", 5));
     }
 
     @Override
-    public Hashtable<String, Integer> getResult() {
-        return fakeResult;
+    public List<Result> getResult() {
+        return fakeResults;
     }
 }

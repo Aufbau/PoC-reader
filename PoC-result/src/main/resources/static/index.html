@@ -4,12 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Results</title>
-		<link href="./main.css" rel="stylesheet" />
+		<link rel="stylesheet" href="./styles/bootstrap.min.css" />
 	</head>
-	<body>
-		<div id="container">
-			<p>The current tally of votes are:</p>
-			<div id="result-container"></div>
+	<body class="bg-light">
+		<div
+			id="container"
+			class="position-absolute top-50 start-50 translate-middle p-3 rounded border border-secondary bg-white"
+		>
+			<p class="h4">The current tally of votes are:</p>
+			<div id="result-container" class=""></div>
 		</div>
 		<script src="./javascript.js"></script>
 	</body>

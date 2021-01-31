@@ -12,7 +12,7 @@
 
 	<groupId>com.aufbau</groupId>
 	<artifactId>PoC-result</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1</version>
 	<name>PoC-result</name>
 	<description>Result </description>
 
@@ -28,6 +28,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>PoC-result</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

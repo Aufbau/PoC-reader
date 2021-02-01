@@ -15,7 +15,7 @@ public class ResultService {
 
     //Dependency injection to choose the implementation of ResultDao
     @Autowired
-    public ResultService(@Qualifier("fakeResults") ResultDao resultDao) {  //Uses fakeResults dao
+    public ResultService(@Qualifier("Results") ResultDao resultDao) {  //Uses fakeResults dao
         this.resultDao = resultDao;
     }
 

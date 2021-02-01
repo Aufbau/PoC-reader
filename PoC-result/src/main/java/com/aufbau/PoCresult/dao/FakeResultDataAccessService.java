@@ -4,7 +4,6 @@ import com.aufbau.PoCresult.models.Result;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
-import java.util.Hashtable;
 import java.util.List;
 
 /*
@@ -13,9 +12,9 @@ import java.util.List;
  */
 
 @Repository("fakeResults")
-public class FakeResultDataAccessService implements ResultDao{
+public class FakeResultDataAccessService implements ResultDao {
 
-    private static List<Result> fakeResults = new ArrayList<>();
+    private static final List<Result> fakeResults = new ArrayList<>();
 
     public FakeResultDataAccessService() {
         fakeResults.add(new Result("Apple", 3));

@@ -2,9 +2,6 @@ package com.aufbau.PoCresult.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.util.ArrayList;
-import java.util.Hashtable;
-
 public class Result {
     private String name;
     private Integer count;
